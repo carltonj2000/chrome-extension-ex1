@@ -1,0 +1,11 @@
+{
+  "name": "CJ Text To Speech",
+  "description": "CJ Text To Speech Extension",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "t2s.html",
+    "default_icon": "speak.png"
+  },
+  "permissions": ["clipboardRead", "storage"]
+}
