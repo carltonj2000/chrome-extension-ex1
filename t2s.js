@@ -1,6 +1,4 @@
-const defaultText =
-  // "Hello Gentlemen, Per Rob's suggestion I have updated the renewal email. I believe we should send out a membership email then a reminder (or two). With that in mind I split Rob's suggestion over two emails so that the second reminder can have new and interesting content. Take a look at the links below and please provide feedback.";
-  "No text selected";
+const defaultText = "Enter text here to speak.";
 const history = [];
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -71,12 +69,11 @@ document.addEventListener("DOMContentLoaded", () => {
     .addEventListener("click", () => speechSynthesis.cancel());
 
   document.querySelector("#clear").addEventListener("click", () => {
-    text.value = "";
+    text.value = defaultText;
     speechSynthesis.cancel();
   });
 
   document.querySelector("#copy").addEventListener("click", async () => {
-    console.log("from");
     text.value = (await navigator.clipboard.readText()).trim();
   });
 

@@ -1,3 +1,4 @@
+/* CSS Reset Start */
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -9,6 +10,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
 *,
 *:before,
 *:after {
@@ -22,7 +24,8 @@ select {
   font: inherit;
 }
 
-/*
+/* CSS Reset End */
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -42,45 +45,7 @@ button:focus-visible {
 }
 
 textarea {
-  min-width: 320px;
+  min-width: 400px;
   max-width: 500px;
   width: 100%;
 }
-
-body,
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  margin: 0;
-}
-
-textarea {
-  text-align: center;
-}
-
-.buttonstart {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.buttonend {
-  margin-top: 0.5rem;
-}
-
-.prompt {
-  width: 100%;
-  padding: 0.5rem 0.1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  background: yellow;
-  transition: all 1s;
-}
-
-body {
-  min-height: 100vh;
-}
-*/
